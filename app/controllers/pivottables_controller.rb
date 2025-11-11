@@ -1,5 +1,5 @@
 class PivottablesController < ApplicationController
-  unloadable
+  # unloadable
   if respond_to? :before_action
     before_action :find_optional_project, :authorize, :only => [:index, :new, :save]
   else
